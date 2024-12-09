@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --green: hsl(75, 94%, 57%);
+      --white: hsl(0, 0%, 100%);
+      --grey700: hsl(0, 0%, 20%);
+      --grey800: hsl(0, 0%, 12%);
+      --grey900: hsl(0, 0%, 8%);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--grey900);
+      font-family: sans-serif;
+    }
+
+    .centering-container {
+      display: grid;
+      place-items: center;
+      height: 100dvh;
+    }
+
+    .social-container {
+      background-color: var(--grey800);
+      width: clamp(200px, 50dvw, 350px);
+      text-align: center;
+      padding: 2rem;
+      border-radius: 2rem;
+      .profile {
+        aspect-ratio: 1;
+        border-radius: 50%;
+        width: 100px;
+      }
+      h1 {
+        color: var(--white);
+        line-height: 0.5em;
+      }
+    }
+    .location {
+      color: var(--green);
+      display: block;
+    }
+    .about {
+      color: var(--white);
+      display: block;
+      margin: 2rem auto;
+    }
+    .button-list {
+      /* border: 2px solid red; */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    a.button {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      color: var(--white);
+      background-color: var(--grey700);
+      font-weight: 700;
+      border-radius: 0.75rem;
+      transition: all 1s ease-out;
+      &:hover {
+        background-color: var(--green);
+        color: var(--grey900);
+        transition-duration: 0.2s;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="centering-container">
+    <div class="social-container">
+      <img class="profile" src="./assets/images/avatar-jessica.jpeg" alt="">
+      <h1>Jessica Randall</h1>
+      <span class="location">London, United Kingdom</span>
+      <span class="about">"Front-end developer and avid reader."</span>
+      <div class="button-list">
+        <a href="" class="button">GitHub</a>
+        <a href="" class="button">Frontend Mentor</a>
+        <a href="" class="button">LinkedIn</a>
+        <a href="" class="button">Twitter</a>
+        <a href="" class="button">Instagram</a>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+</body>
+
+</html>
